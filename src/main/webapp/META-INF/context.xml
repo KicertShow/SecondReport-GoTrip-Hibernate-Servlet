@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?> 
+<Context displayName="JSP Servlet Example" docBase="example" path="/example" reloadable="true">
+  <!--               MySQL(範例程式會用到的DataSource)       -->
+  <Resource name="jdbc/MemberDataBase" 
+     type="javax.sql.DataSource"
+      username="" password="Do!ng123"
+      driverClassName="com.mysql.cj.jdbc.Driver"
+      url="jdbc:mysql://127.0.0.1:3306/jspdb"
+      connectionProperties="useSSL=false;useUnicode=yes;characterEncoding=utf8;serverTimezone=Asia/Taipei"
+      maxTotal="8"
+      maxIdle="4"
+      maxWaitMillis="5000"
+  />
+
+</Context>
